@@ -1,0 +1,26 @@
+.btn-morado {
+    background: $morado;
+    border: none;
+    border-radius: 0!important;
+    font-size: 1rem;
+    &:hover {
+        background:lighten( $morado, 15% ); 
+    }
+}
+.btn {
+    border-radius: 0!important;
+}
+
+.btn-white {
+    background: $blanco;
+    border-radius: 0!important;
+    font-size: 1rem;
+    color: $morado;
+    border-color: $morado;
+}
+
+.btn-lenguaje {
+    background: $verde-principal;
+    color: $gris-principal;
+    border-radius: 4px!important;
+}

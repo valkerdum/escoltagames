@@ -1,0 +1,84 @@
+.owl-carousel 
+{
+    .owl-item {
+        img {
+            &.owl-lazy {
+                position: absolute;
+            }
+        }
+    }
+    .owl-nav {
+        position: absolute;
+        top:50%;
+        margin-top: -100px;
+        width: 100%;
+        button {
+            &.owl-prev,
+            &.owl-next {
+                font-size: 100px;
+                color: $morado;
+            }
+
+            &.owl-prev {
+                float: left;
+                margin-left: 10px;
+            }
+            &.owl-next {
+                float: right;
+                margin-right: 10px;
+                
+            }
+        }
+    }
+    .carousel-container {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
+.owl-theme {
+    .owl-dots {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        margin-left: -36px;
+        .owl-dot {
+            span {
+                background: $blanco;
+            }
+            &.active {
+                span {
+                    background: $negro;
+                }
+            }
+        }
+    }
+    .owl-nav {
+        [class*=owl-] {
+            &:hover {
+                background: none;
+                color: $morado;
+                opacity: 1;
+                outline: none;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .owl-carousel {
+        height: 300px;
+        overflow: hidden;
+    }
+    .owl-item {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .owl-lazy {
+        height: 100%;
+    }
+}

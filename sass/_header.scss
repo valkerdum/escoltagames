@@ -1,0 +1,107 @@
+header {
+    height: 80px;
+    background-color: $gris-principal;
+    .navbar-dark {
+        .navbar-nav {
+            .nav-link {
+                color: $blanco;
+            }
+        }
+    } 
+    .perfil-gamer {
+        img {
+            border-radius: 50%;
+            height: 52px;
+            width: 52px;
+            margin-right: 10px;
+        }
+        .nombre-gamer {
+            color: $blanco;
+            &:hover {
+                text-decoration: none;
+                p {
+                    color: $verde-principal;
+                    transition: $animacion-hover;
+                }
+            }
+        }
+        .notificaciones {
+            margin-left: 20px;
+            margin-right: 10px;
+            position: relative;
+            i {
+                font-size: 30px;
+                color: $verde-principal;
+            }
+            &.notificaciones--activas {
+                &:before{
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    background: $rojo-notificacion;
+                    border: solid 1px $blanco;
+                    border-radius: 50%;
+                    display: block;
+                    position: absolute;
+                    top: -1px;
+                    right: -3px;
+                }
+            }
+        }
+    }
+
+    //menu mobile
+    .navbar-toggler {
+        border: none;
+    }
+    // Se sobreescribe el color de los link del menu para el menu desplegable
+    .navbar-collapse {
+        &.collapse {
+            &.show {
+                z-index: 9;
+                margin-top:9px;
+                margin-right: 12px;
+                .navbar-nav {
+                    padding: 15px;
+                    width: 250px;
+                    float: right;
+                    background: $blanco;
+                    .notificaciones {
+                        margin-left: 20px;
+                        margin-right: 10px;
+                        position: relative;
+                        float: right;
+                        i {
+                            font-size: 25px;
+                            color: $gris-principal;
+                        }
+                        &.notificaciones--activas {
+                            &:before{
+                                content: '2';
+                                width: 14px;
+                                height: 14px;
+                                background: $rojo-notificacion;
+                                border: solid 1px $blanco;
+                                border-radius: 50%;
+                                display: block;
+                                position: absolute;
+                                top: -1px;
+                                right: -3px;
+                                font-size: 9px;
+                                color: $blanco;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .nav-link {
+                    color: $gris-principal;
+                }
+            }
+        }
+    }
+}
+
+.navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
