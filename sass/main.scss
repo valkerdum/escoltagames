@@ -115,11 +115,6 @@ select {
             background: rgba($negro, 0.3);
         }
     }
-    .perfil-escolta {
-    //    .img-escolta {
-    //        border-radius: 50%;
-    //    }
-    }
     .sobre-mi {
         color: $blanco;
         .btn-lenguaje {
@@ -150,7 +145,7 @@ select {
     .resenas-usuarios {
         color: $blanco;
         .user-review {
-            &:first-child {
+            &:first-of-type {
                 margin-top: 20px;
             }
             margin-top: 5px;
@@ -175,6 +170,30 @@ select {
             }
         }
     }
+}
+
+.interior-juego {
+    .escolta-container {
+        padding-top: 40px;
+    }
+    .cabecera-seccion--juego {
+        width: 100%;
+        height: auto;
+    }
+    .resenas-usuarios,
+    .perfil-escolta {
+        & >div {
+            background: none;
+        }
+    }
+    .resenas-usuarios {
+        .user-review {
+            &:first-of-type{
+                margin-top: 20px;
+            }
+        }
+    }
+ 
 }
 
 @media (max-width: 576px) {
