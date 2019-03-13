@@ -7,3 +7,60 @@
 .text-underline{
     text-decoration: underline;
 }
+
+p,
+a,
+small,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+select,
+input,
+button,
+label{
+    font-family: 'robotoCRegular';
+}
+
+strong {
+    font-family: 'RobotoCBold';
+}
+
+.font-weight-bold {
+    font-family: 'RobotoCBold';
+}
+
+.font-italic {
+    font-family: 'robotoCItalic';
+}
+
+
+@mixin font($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file+'.eot');
+    src: url($font-file+'.eot?#iefix') format('embedded-opentype'),
+  url($font-file+'.woff') format('woff'),
+  url($font-file+'.ttf') format('truetype'),
+  url($font-file+'.svg#aller') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@include font('robotoCRegular', '../fonts/RobotoCondensed-Regular');
+@include font('robotoCLight', '../fonts/RobotoCondensed-Light');
+@include font('robotoCItalic', '../fonts/RobotoCondensed-Italic');
+@include font('RobotoCLightItalic', '../fonts/RobotoCondensed-LightItalic');
+@include font('RobotoCBold', '../fonts/RobotoCondensed-Bold');
+@include font('robotoBoldCItalic', '../fonts/RobotoCondensed-BoldItalic');
+
+
+
+
+
+
+
+
