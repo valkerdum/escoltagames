@@ -23,10 +23,11 @@
         <a class="navbar-brand col-9 col-sm-3 px-0" href="#">
             <img src="img/escortgames-logo.svg" width="223" height="45" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
@@ -41,8 +42,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contacto</a>
                 </li>
-                <li class="d-lg-none">
-                    <a class="nav-link" href="">Mi Perfil 
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="">Mi Perfil
                         <span class="notificaciones notificaciones--activas">
                             <i class="fas fa-bell"></i>
                         </span>
@@ -53,13 +54,25 @@
                 <a href="#" class="d-none d-lg-block">
                     <img src="img/rosa.jpg" width="52" height="52" alt="">
                 </a>
-                <a href="#" class="nombre-gamer d-none d-lg-block">
+                <a href="#" class="nombre-gamer d-none d-lg-block mr-2">
                     <p class="mb-0"><small>Bienvenido</small></p>
                     <p class="mb-0">Takumi Fujiwara</p>
                 </a>
-                <a href="#" class="notificaciones notificaciones--activas d-none d-lg-block">
-                    <i class="fas fa-bell"></i>
-                </a>
+
+
+                <div class="dropdown notificaciones-container">
+                    <a href="#" class="notificaciones notificaciones--activas d-none d-lg-block dropdown-toggle"
+                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fas fa-bell"></i>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item font-weight-bold" href="#">Nuevo mensaje de Valkerdum</a>
+                        <a class="dropdown-item font-weight-bold" href="#">Escolta agendado</a>
+                        <a class="dropdown-item font-italic" href="#">Escolta agendado</a>
+                    </div>
+                </div>
             </span>
         </div>
     </nav>
@@ -73,7 +86,7 @@
             <div class="col-12">
                 <div class="escolta-container row">
                     <!-- Perfil escolta -->
-                    <div class="col-12 col-sm-4 perfil-escolta">
+                    <div class="col-12 col-sm-5 col-lg-4 perfil-escolta">
                         <div class="col-12 pt-4 pb-2">
                             <div class="text-center">
                                 <img src="img/rosa.jpg" width="176" height="176" alt="" class="rounded-circle">
@@ -104,7 +117,7 @@
                     </div> <!-- END Perfil escolta -->
                 
                     <!-- Sobre mi -->
-                    <div class="col-12 col-md-8 sobre-mi">
+                    <div class="col-12 col-md-7 col-lg-8 sobre-mi">
                         <div class="col-12 pb-4">
                             <h4 class="header-seccion">Sobre mí</h4>
                             <p>Mi nombre es Keisuke Takahashi, soy un empresario, jugador conocido en League of Legends, ajedrez y

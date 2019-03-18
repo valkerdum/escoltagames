@@ -25,27 +25,73 @@ header {
                 }
             }
         }
-        .notificaciones {
-            margin-left: 20px;
-            margin-right: 10px;
-            position: relative;
-            i {
-                font-size: 30px;
-                color: $verde-principal;
-            }
-            &.notificaciones--activas {
-                &:before{
-                    content: '';
-                    width: 14px;
-                    height: 14px;
-                    background: $rojo-notificacion;
-                    border: solid 1px $blanco;
-                    border-radius: 50%;
-                    display: block;
-                    position: absolute;
-                    top: -1px;
-                    right: -3px;
+        .notificaciones-container {
+            .dropdown-item {
+                &:focus,
+                &:hover {
+                    background: $morado;
+                    color: $blanco;
                 }
+            }
+            &.show {
+                position: relative;
+                &:before {
+                    content: '';
+                    background: $blanco;
+                    width: 65px;
+                    height: 80px;
+                    position: absolute;
+                    top: -19px;
+                }
+                .notificaciones {
+                    i {
+                        color: $gris-principal!important;
+                    }
+                }
+            }
+            .notificaciones {
+                margin-left: 20px;
+                margin-right: 10px;
+                position: relative;
+                &:hover {
+                    i {
+                        color: $blanco;
+                    }
+                }
+                i {
+                    font-size: 30px;
+                    color: $verde-principal;
+                    transition: $animacion-hover;
+                }
+                &.notificaciones--activas {
+                    &:before{
+                        content: '2';
+                        width: 14px;
+                        height: 14px;
+                        background: $rojo-notificacion;
+                        border: solid 1px $blanco;
+                        border-radius: 50%;
+                        display: block;
+                        position: absolute;
+                        top: -1px;
+                        right: -3px;
+                        font-size: 9px;
+                        color: $blanco;
+                        text-align: center;
+                    }
+                }
+                &.dropdown-toggle {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+            .dropdown-menu {
+                right: -9px;
+                left: inherit;
+                top: 178%;
+                border: 0;
+                border-radius: 0;
             }
         }
     }
@@ -62,10 +108,22 @@ header {
                 margin-top:9px;
                 margin-right: 12px;
                 .navbar-nav {
-                    padding: 15px;
                     width: 250px;
                     float: right;
                     background: $blanco;
+                    padding: 0;
+                    .nav-item {
+                        padding: 3px 15px;
+                        &.active {
+                            background: $morado;
+                            .nav-link{
+                                color: $blanco;
+                                i {
+                                    color: $blanco;
+                                }
+                            }
+                        }
+                    }
                     .notificaciones {
                         margin-left: 20px;
                         margin-right: 10px;
@@ -103,5 +161,5 @@ header {
 }
 
 .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    }
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}

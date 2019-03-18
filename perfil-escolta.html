@@ -41,7 +41,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contacto</a>
                 </li>
-                <li class="d-lg-none">
+                <li class="nav-item d-lg-none">
                     <a class="nav-link" href="">Mi Perfil 
                         <span class="notificaciones notificaciones--activas">
                             <i class="fas fa-bell"></i>
@@ -53,13 +53,24 @@
                 <a href="#" class="d-none d-lg-block">
                     <img src="img/rosa.jpg" width="52" height="52" alt="">
                 </a>
-                <a href="#" class="nombre-gamer d-none d-lg-block">
+                <a href="#" class="nombre-gamer d-none d-lg-block mr-2">
                     <p class="mb-0"><small>Bienvenido</small></p>
                     <p class="mb-0">Takumi Fujiwara</p>
                 </a>
-                <a href="#" class="notificaciones notificaciones--activas d-none d-lg-block">
-                    <i class="fas fa-bell"></i>
-                </a>
+               
+
+                <div class="dropdown notificaciones-container">
+                    <a href="#" class="notificaciones notificaciones--activas d-none d-lg-block dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item font-weight-bold" href="#">Nuevo mensaje de Valkerdum</a>
+                        <a class="dropdown-item font-weight-bold" href="#">Escolta agendado</a>
+                        <a class="dropdown-item font-italic" href="#">Escolta agendado</a>
+                    </div>
+                </div>
             </span>
         </div>
     </nav>
@@ -73,7 +84,7 @@
             <div class="col-12">
                 <div class="escolta-container row">
                     <!-- Perfil escolta -->
-                    <div class="col-12 col-sm-4 perfil-escolta">
+                    <div class="col-12 col-sm-5 col-lg-4 perfil-escolta">
                         <div class="col-12 pt-4 pb-2">
                             <div class="text-center">
                                 <img src="img/rosa.jpg" width="176" height="176" alt="" class="rounded-circle">
@@ -112,7 +123,7 @@
                     </div> <!-- END Perfil escolta -->
                 
                     <!-- Sobre mi -->
-                    <div class="col-12 col-md-8 sobre-mi">
+                    <div class="col-12 col-md-7 col-lg-8 sobre-mi">
                         <div class="col-12 pb-4">
                             <h4 class="header-seccion">Sobre mí</h4>
                             <p>Mi nombre es Keisuke Takahashi, soy un empresario, jugador conocido en League of Legends, ajedrez y
@@ -175,7 +186,7 @@
                         </div>
                     </div> <!-- END Sobre mi -->
                 
-                    <div class="col-12 col-sm-4 contratar-escolta mt-3">
+                    <div class="col-12 col-sm-5 col-lg-4 contratar-escolta mt-3">
                         <div class="col-12 pb-4">
                             <h4 class="header-seccion">Contratar escolta</h4>
                             <h5 class="font-weight-bold">Juego</h5>
@@ -232,7 +243,7 @@
                                 <div class="col-12 border border-white my-4"></div>
                                 <!-- Datepicker -->
                                 <h5 class="font-weight-bold">Fecha</h5>
-                                <div class="form-group mb-0">
+                                <div class="form-group mb-0 mt-3">
                                     <div class="row">
                                         <div class="col-12">
                                             <div id="datetimepicker13"></div>
@@ -256,7 +267,7 @@
                         </div>
                     </div>
                 
-                    <div class="col-12 col-md-8 resenas-usuarios mt-3">
+                    <div class="col-12 col-md-7 col-lg-8 resenas-usuarios mt-3">
                         <div class="col-12">
                             <h4 class="header-seccion">Reseñas de usuarios</h4>
                             <div class="row user-review">
@@ -348,7 +359,7 @@
 <!-- MODAL CONTRATAR -->
 <div class="modal fade" id="Modal-simple-demo" tabindex="-1" role="dialog" aria-labelledby="Modal-simple-demo-label"
     aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content modal-contratar">
             <div class="modal-header">
                 <img src="img/modalcontratar-bg.png" class="modal-contratar-img" alt="">
@@ -373,13 +384,52 @@
             </div>
 
             <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-morado">Contratar</button>
+                <button type="button" class="btn btn-morado" data-toggle="modal" data-target="#Modal-simple-demo-dos" data-dismiss="modal">Contratar</button>
                 <button type="button" class="btn btn-underline-morado" data-dismiss="modal">Cancelar</button>
             </div>
         </div>
 
     </div>
  </div> <!--END MODAL CONTRATAR -->
+
+<!-- MODAL CONTRATAR OK-->
+<div class="modal fade" id="Modal-simple-demo-dos" tabindex="-1" role="dialog" aria-labelledby="Modal-simple-demo-label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-contratar">
+            <div class="modal-header">
+                <img src="img/modalcontratarok-bg.png" class="modal-contratar-img" alt="">
+            </div>
+
+            <div class="modal-body">
+                <div class="row justify-content-center">
+                    <h2>¡Agendamiento de hora exitosa!</h2>
+                    <div class="col-11"><p>Felicitaciones Takumi, ahora podrás aprender acompañado de un gran partner de juegos. Dejamos a continuación los
+                        detalles de tu reserva.</p></div>
+                    
+                    <div class="col-8 pb-3 d-flex align-items-center">
+                        <img src="img/icon-television.svg" width="29" height="29" class="mr-4" alt="">
+                        <p class="mb-0"><strong>Juego:</strong> <br> Playerunknown's Battlegrounds</p>
+                    </div>
+                    <div class="col-8 pb-3 d-flex align-items-center">
+                        <img src="img/icon-manos.svg" width="29" height="29" class="mr-4" alt="">
+                        <p class="mb-0"><strong>Escolta:</strong> <br> Keisuke Takahashi</p>
+                    </div>
+                    <div class="col-8 pb-3 d-flex align-items-center">
+                        <img src="img/icon-calendario.svg" width="29" height="29" class="mr-4" alt="">
+                        <p class="mb-0"><strong>Fecha y hora:</strong> <br> 15 de mayo 2019, 21:00 a 22:00 hrs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-morado" data-dismiss="modal">Volver a Mi Perfil</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--END MODAL CONTRATAR  OK-->
 
 <footer class="mt-5 footer row mx-0">
     <div class="col-12 align-self-end px-0">

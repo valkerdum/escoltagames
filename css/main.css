@@ -249,22 +249,54 @@ header .perfil-gamer .nombre-gamer:hover p {
   transition: all 0.3s ease;
 }
 
-/* line 28, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
-header .perfil-gamer .notificaciones {
+/* line 30, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .perfil-gamer .notificaciones-container .dropdown-item:focus, header .perfil-gamer .notificaciones-container .dropdown-item:hover {
+  background: #2A095F;
+  color: #ffffff;
+}
+
+/* line 36, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .perfil-gamer .notificaciones-container.show {
+  position: relative;
+}
+
+/* line 38, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .perfil-gamer .notificaciones-container.show:before {
+  content: '';
+  background: #ffffff;
+  width: 65px;
+  height: 80px;
+  position: absolute;
+  top: -19px;
+}
+
+/* line 47, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .perfil-gamer .notificaciones-container.show .notificaciones i {
+  color: #333334 !important;
+}
+
+/* line 52, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .perfil-gamer .notificaciones-container .notificaciones {
   margin-left: 20px;
   margin-right: 10px;
   position: relative;
 }
 
-/* line 32, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
-header .perfil-gamer .notificaciones i {
-  font-size: 30px;
-  color: #3EFDD9;
+/* line 57, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .perfil-gamer .notificaciones-container .notificaciones:hover i {
+  color: #ffffff;
 }
 
-/* line 37, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
-header .perfil-gamer .notificaciones.notificaciones--activas:before {
-  content: '';
+/* line 61, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .perfil-gamer .notificaciones-container .notificaciones i {
+  font-size: 30px;
+  color: #3EFDD9;
+  transition: all 0.3s ease;
+}
+
+/* line 67, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .perfil-gamer .notificaciones-container .notificaciones.notificaciones--activas:before {
+  content: '2';
   width: 14px;
   height: 14px;
   background: #D0021B;
@@ -274,29 +306,66 @@ header .perfil-gamer .notificaciones.notificaciones--activas:before {
   position: absolute;
   top: -1px;
   right: -3px;
+  font-size: 9px;
+  color: #ffffff;
+  text-align: center;
 }
 
-/* line 54, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+/* line 84, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .perfil-gamer .notificaciones-container .notificaciones.dropdown-toggle::after {
+  display: none;
+}
+
+/* line 89, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .perfil-gamer .notificaciones-container .dropdown-menu {
+  right: -9px;
+  left: inherit;
+  top: 178%;
+  border: 0;
+  border-radius: 0;
+}
+
+/* line 100, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
 header .navbar-toggler {
   border: none;
 }
 
-/* line 60, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+/* line 106, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
 header .navbar-collapse.collapse.show {
   z-index: 9;
   margin-top: 9px;
   margin-right: 12px;
 }
 
-/* line 64, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+/* line 110, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
 header .navbar-collapse.collapse.show .navbar-nav {
-  padding: 15px;
   width: 250px;
   float: right;
   background: #ffffff;
+  padding: 0;
 }
 
-/* line 69, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+/* line 115, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .navbar-collapse.collapse.show .navbar-nav .nav-item {
+  padding: 3px 15px;
+}
+
+/* line 117, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .navbar-collapse.collapse.show .navbar-nav .nav-item.active {
+  background: #2A095F;
+}
+
+/* line 119, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .navbar-collapse.collapse.show .navbar-nav .nav-item.active .nav-link {
+  color: #ffffff;
+}
+
+/* line 121, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+header .navbar-collapse.collapse.show .navbar-nav .nav-item.active .nav-link i {
+  color: #ffffff;
+}
+
+/* line 127, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
 header .navbar-collapse.collapse.show .navbar-nav .notificaciones {
   margin-left: 20px;
   margin-right: 10px;
@@ -304,13 +373,13 @@ header .navbar-collapse.collapse.show .navbar-nav .notificaciones {
   float: right;
 }
 
-/* line 74, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+/* line 132, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
 header .navbar-collapse.collapse.show .navbar-nav .notificaciones i {
   font-size: 25px;
   color: #333334;
 }
 
-/* line 79, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+/* line 137, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
 header .navbar-collapse.collapse.show .navbar-nav .notificaciones.notificaciones--activas:before {
   content: '2';
   width: 14px;
@@ -327,12 +396,12 @@ header .navbar-collapse.collapse.show .navbar-nav .notificaciones.notificaciones
   text-align: center;
 }
 
-/* line 97, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+/* line 155, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
 header .navbar-collapse.collapse.show .nav-link {
   color: #333334;
 }
 
-/* line 105, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
+/* line 163, /Users/fpardo/Documents/proyectos internos/escolta/sass/_header.scss */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -430,29 +499,112 @@ header .navbar-collapse.collapse.show .nav-link {
   }
 }
 
-/* line 9, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 1, /Users/fpardo/Documents/proyectos internos/escolta/sass/_modalcontratar.scss */
+.modal-contratar {
+  background: rgba(62, 253, 217, 0.9);
+  border-radius: 0;
+  border: none;
+}
+
+/* line 5, /Users/fpardo/Documents/proyectos internos/escolta/sass/_modalcontratar.scss */
+.modal-contratar .modal-header {
+  border: none;
+  padding: 0;
+}
+
+/* line 8, /Users/fpardo/Documents/proyectos internos/escolta/sass/_modalcontratar.scss */
+.modal-contratar .modal-header .modal-title {
+  font-family: 'RobotoCBold';
+  color: #ffffff;
+  position: absolute;
+  left: calc(50% - 3rem);
+  top: 6rem;
+}
+
+/* line 15, /Users/fpardo/Documents/proyectos internos/escolta/sass/_modalcontratar.scss */
+.modal-contratar .modal-header .modal-contratar-img {
+  width: 100%;
+}
+
+/* line 19, /Users/fpardo/Documents/proyectos internos/escolta/sass/_modalcontratar.scss */
+.modal-contratar .modal-footer {
+  border-radius: 0;
+  border: none;
+  padding-top: 0;
+  flex-direction: column;
+}
+
+/* line 24, /Users/fpardo/Documents/proyectos internos/escolta/sass/_modalcontratar.scss */
+.modal-contratar .modal-footer .btn-morado {
+  color: #ffffff;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* line 31, /Users/fpardo/Documents/proyectos internos/escolta/sass/_modalcontratar.scss */
+.modal-contratar .modal-footer .btn-underline-morado {
+  color: #2A095F;
+  text-decoration: underline;
+  text-decoration-color: #2A095F;
+  background: none;
+  margin-left: 0;
+}
+
+@media (max-width: 576px) {
+  /* line 42, /Users/fpardo/Documents/proyectos internos/escolta/sass/_modalcontratar.scss */
+  .modal-dialog {
+    min-width: 100%;
+    margin: 0;
+  }
+  /* line 47, /Users/fpardo/Documents/proyectos internos/escolta/sass/_modalcontratar.scss */
+  .modal-dialog .modal-content {
+    min-height: 100vh;
+    width: 100vw;
+  }
+}
+
+/* line 3, /Users/fpardo/Documents/proyectos internos/escolta/sass/_datepicker.scss */
+.bootstrap-datetimepicker-widget .table td, .bootstrap-datetimepicker-widget .table th {
+  border: none;
+}
+
+/* line 7, /Users/fpardo/Documents/proyectos internos/escolta/sass/_datepicker.scss */
+.bootstrap-datetimepicker-widget .table td.active {
+  background: #ffffff;
+  color: #333334;
+  text-shadow: none;
+}
+
+/* line 11, /Users/fpardo/Documents/proyectos internos/escolta/sass/_datepicker.scss */
+.bootstrap-datetimepicker-widget .table td.active:before {
+  content: none;
+}
+
+/* line 11, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 body {
   background: #333334;
 }
 
-/* line 13, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 15, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .form-control,
 select {
   border-radius: 0 !important;
   border: none;
 }
 
-/* line 18, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 20, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .border {
   border-width: 0 0 1px 0 !important;
 }
 
-/* line 20, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 22, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .border.border-white {
   border-bottom: solid 1px #D8D8D8 !important;
 }
 
-/* line 26, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 28, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card {
   border-radius: 0;
   border: none;
@@ -463,20 +615,20 @@ select {
   margin-bottom: 15px;
 }
 
-/* line 35, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 37, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card:hover .card-hover {
   background: rgba(62, 253, 217, 0.9);
   transform: scale(1);
   transition: all 700ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
 }
 
-/* line 41, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 43, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card .card-body {
   padding-top: 0;
   margin-top: -20px;
 }
 
-/* line 44, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 46, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card .card-body .card-title {
   color: #ffffff;
   text-align: center;
@@ -484,22 +636,22 @@ select {
   font-family: 'RobotoCBold';
 }
 
-/* line 50, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 52, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card .card-body .info-card {
   margin-bottom: 10px;
 }
 
-/* line 52, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 54, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card .card-body .info-card:last-child {
   margin-bottom: 0;
 }
 
-/* line 55, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 57, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card .card-body .info-card .card-text {
   color: #ffffff;
 }
 
-/* line 58, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 60, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card .card-body .info-card .fas {
   font-size: 20px;
   color: #ffffff;
@@ -507,12 +659,12 @@ select {
   width: 25px;
 }
 
-/* line 66, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 68, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card .shadow-container {
   filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.5));
 }
 
-/* line 68, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 70, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card .shadow-container .img-holder {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 58% 75%, 50% 86%, 42% 75%, 0% 75%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 58% 75%, 50% 86%, 42% 75%, 0% 75%);
@@ -520,19 +672,19 @@ select {
   overflow: hidden;
 }
 
-/* line 74, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 76, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card .shadow-container .card-img-top {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-/* line 79, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 81, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card .card-footer {
   color: #ffffff;
   background: #181819;
 }
 
-/* line 83, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 85, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card .card-hover {
   position: absolute;
   height: 100%;
@@ -543,24 +695,24 @@ select {
   z-index: 0;
 }
 
-/* line 91, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 93, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .card-deck .card .card-hover a {
   text-decoration: none;
 }
 
-/* line 100, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 102, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .cabecera-seccion {
   width: 100%;
   height: auto;
   position: absolute;
 }
 
-/* line 105, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 107, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .escolta-container {
   padding-top: 90px;
 }
 
-/* line 108, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 110, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .header-seccion {
   background: rgba(0, 0, 0, 0.4);
   margin-left: -15px;
@@ -569,7 +721,7 @@ select {
   font-family: 'RobotoCBold';
 }
 
-/* line 119, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 121, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .perfil-escolta > div,
 .escolta-seccion .sobre-mi > div,
 .escolta-seccion .resenas-usuarios > div,
@@ -577,181 +729,128 @@ select {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 124, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 126, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .perfil-escolta h2 {
   font-family: 'RobotoCBold';
 }
 
-/* line 128, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 130, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .sobre-mi {
   color: #ffffff;
 }
 
-/* line 130, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 132, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .sobre-mi .btn-lenguaje {
   margin-right: 10px;
 }
 
-/* line 132, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 134, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .sobre-mi .btn-lenguaje:last-child {
   margin-right: 0;
 }
 
-/* line 138, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 140, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .juegos-que-domino .card {
   background: none;
   border: none;
 }
 
-/* line 143, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 145, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .contratar-escolta {
   color: #ffffff;
 }
 
-/* line 145, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 147, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .contratar-escolta .form-check {
   margin: 10px 0;
 }
 
-/* line 147, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 149, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .contratar-escolta .form-check .form-check-label {
   width: calc(100% - 1.25rem);
 }
 
-/* line 152, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 154, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .resenas-usuarios {
   color: #ffffff;
 }
 
-/* line 154, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 156, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .resenas-usuarios .user-review {
   margin-top: 5px;
 }
 
-/* line 155, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 157, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .resenas-usuarios .user-review:first-of-type {
   margin-top: 20px;
 }
 
-/* line 161, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 163, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .resenas-usuarios .pagination .page-item {
   width: 29px;
   height: 29px;
   text-align: center;
 }
 
-/* line 165, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 167, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .resenas-usuarios .pagination .page-item.active {
   background: #ffffff;
   border-radius: 50%;
 }
 
-/* line 168, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 170, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .resenas-usuarios .pagination .page-item.active .page-link {
   color: #000000;
 }
 
-/* line 173, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 175, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .escolta-seccion .resenas-usuarios .pagination .page-link {
   background: none;
   border: none;
   color: #ffffff;
 }
 
-/* line 183, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 185, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .interior-juego .escolta-container {
   padding-top: 40px;
 }
 
-/* line 186, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 188, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .interior-juego .cabecera-seccion--juego {
   width: 100%;
   height: auto;
 }
 
-/* line 192, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 194, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .interior-juego .resenas-usuarios > div,
 .interior-juego .perfil-escolta > div {
   background: none;
 }
 
-/* line 198, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+/* line 200, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
 .interior-juego .resenas-usuarios .user-review:first-of-type {
   margin-top: 20px;
 }
 
-/* line 204, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
-.modal-contratar {
-  background: rgba(62, 253, 217, 0.9);
-  border-radius: 0;
-  border: none;
-}
-
-/* line 208, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
-.modal-contratar .modal-header {
-  border: none;
-  padding: 0;
-}
-
-/* line 211, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
-.modal-contratar .modal-header .modal-title {
-  font-family: 'RobotoCBold';
-  color: #ffffff;
-  position: absolute;
-  left: calc(50% - 3rem);
-  top: 6rem;
-}
-
-/* line 218, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
-.modal-contratar .modal-header .modal-contratar-img {
-  width: 100%;
-}
-
-/* line 222, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
-.modal-contratar .modal-footer {
-  border-radius: 0;
-  border: none;
-  padding-top: 0;
-  flex-direction: column;
-}
-
-/* line 227, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
-.modal-contratar .modal-footer .btn-morado {
-  color: #ffffff;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  margin-right: 0;
-  margin-bottom: 0.5rem;
-}
-
-/* line 234, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
-.modal-contratar .modal-footer .btn-underline-morado {
-  color: #2A095F;
-  text-decoration: underline;
-  text-decoration-color: #2A095F;
-  background: none;
-  margin-left: 0;
-}
-
 @media (max-width: 576px) {
-  /* line 248, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+  /* line 208, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
   .card-deck {
     align-items: center;
   }
-  /* line 250, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+  /* line 210, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
   .card-deck .card {
     flex: 1 0 calc(100% - 30px);
     max-width: calc(100% - 30px);
   }
-  /* line 255, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+  /* line 215, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
   .mt-20-xs {
     margin-top: 20px;
   }
-  /* line 259, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+  /* line 219, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
   .escolta-seccion .escolta-container {
     padding-top: 30px;
   }
-  /* line 262, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+  /* line 222, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
   .escolta-seccion .cabecera-seccion {
     width: 200%;
     left: -20%;
@@ -759,11 +858,11 @@ select {
 }
 
 @media (max-width: 768px) {
-  /* line 272, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+  /* line 232, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
   .escolta-seccion .contratar-escolta .form-check .form-check-label {
     vertical-align: top;
   }
-  /* line 278, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
+  /* line 238, /Users/fpardo/Documents/proyectos internos/escolta/sass/main.scss */
   .card-hover {
     opacity: 0;
     display: none;

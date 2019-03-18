@@ -1,0 +1,17 @@
+.bootstrap-datetimepicker-widget {
+    .table  {
+        td,th {
+            border: none;
+        }
+        td {
+            &.active {
+                background: $blanco;
+                color: $gris-principal;
+                text-shadow:none;
+                &:before {
+                    content: none;
+                }
+            }
+        }
+    }
+}
