@@ -43,7 +43,8 @@ $(".rating-resenas-usuario").starRating({
   $(function () {
     $('#datetimepicker13').datetimepicker({
       inline: true,
-      sideBySide: true,
+      sideBySide: false,
+      format: 'L',
       locale: 'es'
     });
   });
