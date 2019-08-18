@@ -5,7 +5,7 @@
 @import 'fonts';
 @import 'header';
 @import 'footer';
-@import 'modalcontratar.scss';
+@import 'modals.scss';
 @import 'datepicker';
 
 body {
@@ -140,6 +140,43 @@ select {
         .card {
             background: none;
             border:none;
+            margin-bottom: 8px;
+            p {
+                font-size: 14px;
+            }
+        }
+        .agregar-juego {
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            .caja-border-dashed {
+                min-height: 91px;
+                width: 100%;
+                display: flex;
+                border: dashed 2px $verde-principal;
+                transition: $animacion-hover;
+                &:hover {
+                    border-color:$blanco;
+                    color:$blanco;
+                    svg {
+                        #Perfil-Usuario---2-filas-juegos {
+                            fill: $blanco;
+                            transition: $animacion-hover;
+                        }
+                    }
+                }
+            }
+            .card-text {
+                transition: $animacion-hover;
+            }
+            &:hover {
+                .card-text {
+                    color: $blanco;
+                    text-decoration: none;
+                }
+            }
         }
     }
     .contratar-escolta {

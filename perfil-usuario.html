@@ -175,18 +175,36 @@
                                         </div>
                                     </a>
                                 </div>
+                                <div class="card agregar-juego col-6 col-md-3">
+                                    <a href="javascript:void();" data-toggle="modal" data-target="#Modal-agregar-juego">
+                                        <div class="caja-border-dashed align-items-center justify-content-center">
+                                        <svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <title>Combined Shape</title>
+                                            <desc>Created with Sketch.</desc>
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="Perfil-Usuario---2-filas-juegos" transform="translate(-432.000000, -845.000000)" fill="#3EFDD9">
+                                                    <g id="Group" transform="translate(387.000000, 821.000000)">
+                                                        <path
+                                                            d="M67,68 C54.8497355,68 45,58.1502645 45,46 C45,33.8497355 54.8497355,24 67,24 C79.1502645,24 89,33.8497355 89,46 C89,58.1502645 79.1502645,68 67,68 Z M65,44 L57,44 L57,48 L65,48 L65,56 L69,56 L69,48 L77,48 L77,44 L69,44 L69,36 L65,36 L65,44 Z"
+                                                            id="Combined-Shape"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        </div>
+                                        <div class="card-body px-0 py-1 text-center">
+                                            <p class="card-text text-color-verde-marca">Agregar juego</p>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                
                         </div>
                     </div> <!-- END Sobre mi -->
-                
-                
                 </div>
             </div>
-            
         </div>
     </div>
-    
 </section>
 
 <footer class="mt-5 footer row mx-0">
@@ -216,6 +234,91 @@
         </div>
     </div>
 </footer>
+
+
+<!-- MODAL AGREGAR JUEGO -->
+<div class="modal fade" id="Modal-agregar-juego" tabindex="-1" role="dialog" aria-labelledby="Modal-agregar-juego-label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-agregar-juego">
+            <div class="modal-header">
+                <h2 class="modal-title">Agregar juego</h2>
+            </div>
+
+            <div class="modal-body">
+                <div class="row justify-content-center">
+                    <div class="col-7 form-group">
+                        <div class="">
+                            <select class="form-control" id="">
+                                <option value="">Seleccionar juego</option>
+                                <option>Team Fortress 2</option>
+                                <option>Yu-Gi-Oh! Duel Links</option>
+                                <option>ARK: SURVIVAL EVOLVED EXPLORER'S EDITION</option>
+                                <option>ELITE DANGEROUS: COMMANDER DELUXE EDITION</option>
+                                <option>Idle Champions of the Forgotten Realms</option>
+                            </select>
+                        </div>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Ofrecerme como escolta
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-morado" data-toggle="modal" data-target="#Modal-agregar-juego-ok"
+                    data-dismiss="modal">Contratar</button>
+                <button type="button" class="btn btn-underline-morado" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--END MODAL AGREGAR JUEGO -->
+
+<!-- MODAL AGREGAR JUEGO OK -->
+<div class="modal fade" id="Modal-agregar-juego-ok" tabindex="-1" role="dialog" aria-labelledby="Modal-agregar-juego-ok-label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-agregar-juego modal-header-agregar-ok">
+            <div class="modal-header">
+                <img src="img/fortnite-portada-pc.jpg" class="modal-agregar-juego-img" alt="">
+            </div>
+
+            <div class="modal-body">
+                <div class="row justify-content-center">
+                    <div class="col-10 text-center">
+                        <h2 class="font-weight-bold">¡Juego Agregado!</h2>
+                        <p>Se ha agregado Fortnite a tu lista de juegos.</p>
+
+                        <!-- Caso escolta -->
+                        <div class="row justify-content-center mb-3 mt-2">
+                            <div class="media col-6 align-items-center">
+                                <img src="img/escudo-escolta.svg" width="31" height="36" class=" mr-3" alt="...">
+                                <div class="media-body text-left">
+                                    <p class="mb-0">¡Eres escolta!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Este ícono en el juego indica que eres escolta, asi los demás jugadores lo verán en tu perfil.</p>
+                        <!-- END Caso escolta -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-morado" data-dismiss="modal">Volver a Mi Perfil</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--END MODAL AGREGAR JUEGO OK-->
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
