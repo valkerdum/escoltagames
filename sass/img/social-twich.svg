@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="31px" viewBox="0 0 29 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>003-twitch</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-808.000000, -1553.000000)">
+            <g id="003-twitch" transform="translate(808.000000, 1553.000000)">
+                <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="27.0666667 17.4375 21.6533333 23.25 14.7977333 23.25 10.6333333 26.2860625 10.6333333 23.25 3.86666667 23.25 3.86666667 1.9375 27.0666667 1.9375"></polygon>
+                <path d="M1.93333333,0 L0,5.8125 L0,27.125 L7.73333333,27.125 L7.73333333,31 L11.6,31 L15.4666667,27.125 L21.2666667,27.125 L29,18.87125 L29,0 L1.93333333,0 Z M27.0666667,17.4375 L21.6533333,23.25 L14.7977333,23.25 L10.6333333,26.2860625 L10.6333333,23.25 L3.86666667,23.25 L3.86666667,1.9375 L27.0666667,1.9375 L27.0666667,17.4375 Z" id="Shape" fill="#673AB7" fill-rule="nonzero"></path>
+                <rect id="Rectangle" fill="#673AB7" x="13.5333333" y="7.75" width="1.93333333" height="7.75"></rect>
+                <rect id="Rectangle" fill="#673AB7" x="19.3333333" y="7.75" width="1.93333333" height="7.75"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

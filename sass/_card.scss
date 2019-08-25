@@ -1,0 +1,81 @@
+.accordion {
+    .card {
+        .card-body {
+            padding: 0;
+        }
+    }
+}
+
+.card-deck {
+    .card {
+        border-radius: 0;
+        border:none;
+        background: #232324;
+        overflow: hidden;
+        flex: 1 0 calc(33.333% - 30px);
+        max-width: calc(33.333% - 30px);
+        margin-bottom: 15px;
+        &:hover {
+            .card-hover{
+                background: rgba($verde-principal, 0.9);
+                transform: scale(1);
+                transition: all 700ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+            } 
+        }
+        .card-body {
+            padding-top: 0;
+            margin-top: -20px;
+            .card-title {
+                color: $blanco;
+                text-align: center;
+                margin-bottom: 25px;
+                font-family: 'RobotoCBold';
+            }
+            .info-card {
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .card-text {
+                    color: $blanco;
+                }
+                .fas {
+                    font-size: 20px;
+                    color: $blanco;
+                    margin-right: 10px;
+                    width: 25px;
+                }
+            }
+        }
+        .shadow-container{
+            filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
+                .img-holder {
+                -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 58% 75%, 50% 86%, 42% 75%, 0% 75%);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 58% 75%, 50% 86%, 42% 75%, 0% 75%);
+                height: 220px;
+                overflow: hidden;
+            }
+            .card-img-top {
+                border-top-left-radius:0;
+                border-top-right-radius:0;
+            }
+        }
+        .card-footer {
+            color: $blanco;
+            background:$gris-footer-card;
+        }
+        .card-hover {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top:0;
+            transform: scale(0);
+            transition: all 450ms ease 0ms;
+            z-index: 0;
+            a {
+                text-decoration: none;
+            }
+        }
+        
+    }
+}

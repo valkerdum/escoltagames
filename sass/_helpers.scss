@@ -1,0 +1,46 @@
+.font-weight-bold {
+    font-family: $robotoc-bold;
+}
+
+.font-weight-bold {
+    font-family: $robotoc-bold;
+}
+
+.font-italic {
+    font-family: $robotoc-italic;
+}
+.text-color-verde-marca {
+    color:$verde-principal;
+}
+.text-color-negro {
+    color: $negro;
+}
+.text-underline{
+    text-decoration: underline;
+}
+.text-color-blanco {
+    color:$blanco;
+}
+.titulo-con-fondo {
+    background: rgba($negro, 0.4);
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 10px;
+    font-family: $robotoc-bold;
+    &.titulo-con-fondo--textwhite {
+        color: $blanco;
+    }
+    @media (max-width: 576px) {
+       font-size: 16px;
+    }
+}
+.bg-negro-transparente {
+    background: rgba($negro, 0.3);
+}
+
+.border {
+    border-width: 0 0 1px 0!important;
+    &.border-white {
+        border-bottom: solid 1px $blanco-borde !important;
+    }
+}

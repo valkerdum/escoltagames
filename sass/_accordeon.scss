@@ -1,0 +1,41 @@
+.accordion .card-header:after {
+    content: '';
+    background: url(../img/flecha-bold.svg) no-repeat;
+    width: 18px;
+    height: 26px;
+    float: right;
+    transform: rotate(90deg);
+}
+.accordion .card-header.collapsed:after {
+    content: '';
+    background: url(../img/flecha-bold.svg) no-repeat;
+    transform: rotate(-90deg);
+}
+
+.accordion {
+    .card {
+         background: rgba($negro, 0.3);
+         margin-top: 10px;
+         .card-header {
+            background: rgba($negro, 0.4);
+            padding: 10px;
+            font-family: $robotoc-bold;
+            color: $blanco;
+            font-size: 24px;
+            &:hover {
+                cursor: pointer;
+            }
+            .card-title {
+                width: 96%;
+                margin-bottom: 0;
+                @media (max-width: 768px) { 
+                     font-size: 16px;
+                }
+            }
+        }
+        .card-body {
+            padding: 0;
+        }
+    }
+    
+}
