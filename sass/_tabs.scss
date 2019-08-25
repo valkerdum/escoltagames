@@ -1,0 +1,23 @@
+.nav {
+    &.nav-tabs{
+        border-bottom: none;
+        background: rgba($negro, 0.4);
+        .nav-link {
+            font-size: 23px;
+            font-family: $robotoc-bold;
+            color: $blanco;
+            border-radius: 0;
+            border: none;
+            transition: $animacion-hover;
+            &:hover {
+                background: $verde-principal;
+                color:$gris-footer-card;
+            }
+            &.active {
+                background-color: $verde-principal;
+                color:$gris-footer-card;
+                border-color: inherit;
+            }
+        }
+    }
+}

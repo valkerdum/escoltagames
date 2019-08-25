@@ -13,7 +13,13 @@ $(document).ready(function () {
       }
     }
   );
+
+  $(".nav-tabs a").click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
 });
+
 
 $(".my-rating").starRating({
   initialRating: 4,
@@ -49,4 +55,15 @@ $(".rating-resenas-usuario").starRating({
     });
   });
 
+
+
+document.querySelector('.mis-chats-conversacion').fakeScroll();
+document.querySelector('.mis-chats-listado').fakeScroll(
+  {
+    track: "smooth"
+  }
+);
+
+for (let elm of document.querySelectorAll('.fakeScroll__content'))
+  elm.setAttribute('contenteditable', true)
 

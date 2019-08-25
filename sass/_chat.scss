@@ -1,0 +1,176 @@
+.chat-app {
+    .border-0 {
+        &:before {
+            border:none;
+        }
+    }
+    .mis-chats-listado {
+        overflow: auto;
+        height: 278px;
+        padding-left: 0;
+        @media (max-width: 576px) {
+            padding-left: 15px;
+        }
+        .img-perfil-chart {
+            width: 30px;
+            height: 30px;
+        }
+        .media {
+            margin-bottom: 2px;
+            padding: 8px 5px;
+            &:hover {
+                cursor: pointer;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &.chat-active {
+                background: $negro;
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    right: 26px;
+                    background: url('../img/chat-arrow.svg') no-repeat;
+                    width: 10px;
+                    height: 10px;
+                    top: 15px;
+                }
+            }
+        }
+        @media (max-width: 576px) {
+            .fakeScroll__track {
+                right: 16px;
+            }
+            .fakeScroll__wrap {
+                width: 93%;
+            }
+        }
+    }
+    .mis-chats-conversacion {
+        overflow: auto;
+        height: 228px;
+        padding-right: 35px;
+        position: relative;
+        .fakeScroll__track {
+            right: 0;
+        }
+        .mensaje {
+            border-radius: 4px;
+            height: auto;
+            min-height: 52px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            p {
+                font-size: 14px;
+            }
+            &::before {
+                content: '';
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                
+                position: absolute;
+                bottom: 0;
+            }
+            & + img {
+                margin-left: 30px;
+            }
+            &.mensaje-escolta {
+                background-color: rgba($verde-principal, 0.3);
+                border-bottom-right-radius: 0;
+                &::before {
+                    border-color: transparent transparent transparent rgba($verde-principal, 0.3);
+                    right: -20px;
+                    border-width: 20px 0 0 20px;
+                }
+            }
+            &.mensaje-usuario {
+               background-color: rgba($negro, 0.3);
+               padding-left: 10px;
+               &::before {
+                    border-color: transparent transparent rgba($negro, 0.3);
+                    left: -20px;
+                    border-width: 0 0 20px 20px;
+                }
+            }
+
+        }
+        img + .mensaje {
+            margin-left: 30px;
+        }
+    }
+}
+
+// Fakescroll JS
+
+.fakeScroll__scope {
+  overflow: visible !important;
+}
+
+.fakeScroll__wrap {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.fakeScroll__content {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  right: -18px;
+  overflow: auto;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.fakeScroll__track {
+  position: absolute;
+  right: -10px;
+  top: 0;
+  bottom: 0;
+  width: 9px;
+  cursor: default;
+  &:before {
+      content: '';
+      height: 100%;
+      position: absolute;
+      width: 1px;
+      left: 4px;
+      border: solid 1px $gris-footer-card;
+  }
+}
+
+.fakeScroll__bar {
+  position: relative;
+  background: $verde-principal;
+  width: 100%;
+  border-radius: 4px;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  transition: background 0.1s;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  &:hover {
+    background: $verde-principal;
+  }
+  &.fakeScroll--grabbed {
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+    background: white;
+  }
+}
+
+body.fakeScroll--grabbed {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
