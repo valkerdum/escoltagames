@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>002-daily-calendar</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Copy-4" transform="translate(-746.000000, -146.000000)" fill="#333334" fill-rule="nonzero">
+            <g id="Submenu" transform="translate(731.000000, 0.000000)">
+                <g id="002-daily-calendar" transform="translate(15.000000, 146.000000)">
+                    <path d="M15.3333293,1.43562143 L15.3333293,0 L13.4468137,0 L13.4468137,1.43562143 L4.55324017,1.43562143 L4.55324017,0 L2.66672456,0 L2.66672456,1.43562143 L0,1.43562143 L0,14.9368524 C0,15.5240288 0.482624592,16 1.07800892,16 L16.9219911,16 C17.5173754,16 18,15.5240288 18,14.9368524 L18,1.43562143 L15.3333293,1.43562143 Z M15.8719565,13.747828 L2.1280435,13.747828 L2.1280435,4.64462629 L15.8719565,4.64462629 L15.8719565,13.747828 Z" id="Shape"></path>
+                    <rect id="Rectangle" x="4" y="7" width="2" height="2"></rect>
+                    <rect id="Rectangle" x="8" y="7" width="2" height="2"></rect>
+                    <rect id="Rectangle" x="11" y="7" width="2" height="2"></rect>
+                    <rect id="Rectangle" x="4" y="10" width="2" height="2"></rect>
+                    <rect id="Rectangle" x="8" y="10" width="2" height="2"></rect>
+                    <rect id="Rectangle" x="11" y="10" width="2" height="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

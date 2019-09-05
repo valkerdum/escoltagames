@@ -1,0 +1,14 @@
+.table-dark {
+    background: none;
+    th,
+    td {
+        font-size: 0.9rem;
+    }
+    thead {
+        th {
+            border-bottom-color: $blanco-borde;
+            border-top: none;
+        }
+    }
+}
+

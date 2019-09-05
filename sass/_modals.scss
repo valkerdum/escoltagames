@@ -105,6 +105,21 @@
     }
 }
 
+.modal-evalua-escolta {
+    @extend .modal-agregar-juego;
+
+    .modal-header {
+        padding: 20px 0 15px;
+    }
+
+    .jq-star {
+        margin-right: 12px;
+        svg:not(:root) {
+            overflow: visible;
+        }
+    }
+}
+
 @media (max-width: 576px) {
     .modal-dialog {
         min-width: 100%;

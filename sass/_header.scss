@@ -2,6 +2,20 @@ header {
     height: 80px;
     background-color: $gris-principal;
     .navbar-dark {
+        .navbar-brand {
+            @media (max-width: 576px) {
+                img {
+                    display: none;
+                }
+                &:before {
+                    background: url('../img/logo-small.svg') no-repeat;
+                    width: 57px;
+                    height: 31px;
+                    content: '';
+                    display: block;
+                }
+            }
+        }
         .navbar-nav {
             .nav-link {
                 color: $blanco;
@@ -9,21 +23,89 @@ header {
         }
     } 
     .perfil-gamer {
-        img {
-            border-radius: 50%;
-            height: 52px;
-            width: 52px;
-            margin-right: 10px;
-        }
-        .nombre-gamer {
-            color: $blanco;
-            &:hover {
-                text-decoration: none;
-                p {
-                    color: $verde-principal;
-                    transition: $animacion-hover;
+        .jugador-container {
+            height: 80px;
+            margin-top: -8px;
+            .foto-perfil {
+                border-radius: 50%;
+                height: 52px;
+                width: 52px;
+                margin-right: 10px;
+            }
+            .nombre-gamer {
+                color: $blanco;
+                &:hover {
+                    p {
+                        color: $verde-principal;
+                        transition: $animacion-hover;
+                    }
                 }
             }
+            &.show{
+                background: $blanco;
+                .nombre-gamer {
+                    p {
+                        color: $gris-principal;
+                    }
+                }
+                
+                .dropdown-toggle {
+                    &:after{
+                        color: $gris-principal;
+                    }
+                }
+            }
+            .dropdown-toggle {
+                 &:after {
+                    color: $blanco;
+                    border-top: .4em solid;
+                    border-right: .3em solid #0000;
+                    border-left: .3em solid #0000;
+                    position: absolute;
+                    right: 20px;
+                    top: calc(50% - .3em);
+                     @media (max-width: 992px) {
+                        right: -10px ;
+                    }
+                 }
+                 
+            }
+            .dropdown-menu {
+                border-radius: 0;
+                border: 0;
+                margin-top: 0;
+                width: 278px;
+                .dropdown-item {
+                    margin-bottom: 5px;
+                    display: flex;
+                    align-items: center;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &:focus,
+                    &:hover {
+                        background: $morado;
+                        color: $blanco;
+                        img {
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                    img {
+                        margin-right: 16px;
+                    }
+                    
+                }
+                hr {
+                    margin: 8px 0;
+                    border-color: #000;
+                }
+            }
+            &:hover {
+                a {
+                    text-decoration: none;
+                }
+            }
+               
         }
         .notificaciones-container {
             .dropdown-item {
@@ -89,7 +171,7 @@ header {
             .dropdown-menu {
                 right: -9px;
                 left: inherit;
-                top: 178%;
+                top: 153%;
                 border: 0;
                 border-radius: 0;
             }
@@ -107,6 +189,10 @@ header {
                 z-index: 9;
                 margin-top:9px;
                 margin-right: 12px;
+                @media (max-width: 992px) {
+                    margin-top: -8px;
+                    margin-right: 0;
+                }
                 .navbar-nav {
                     width: 250px;
                     float: right;

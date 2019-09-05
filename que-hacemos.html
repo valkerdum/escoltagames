@@ -19,63 +19,97 @@
 
 <body>
 
-    <!-- navegación -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand col-9 col-sm-3 px-0" href="#">
-                <img src="img/escortgames-logo.svg" width="223" height="45" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link font-weight-bold" href="#">Juegos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Escoltas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Qué hacemos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="">Mi Perfil
-                            <span class="notificaciones notificaciones--activas">
-                                <i class="fas fa-bell"></i>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-                <span class="col-5 perfil-gamer d-flex align-items-center justify-content-end">
-                    <a href="#" class="d-none d-lg-block">
-                        <img src="img/rosa.jpg" width="52" height="52" alt="">
-                    </a>
-                    <a href="#" class="nombre-gamer d-none d-lg-block mr-2">
+<!-- navegación -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand col-2 col-sm-3 px-0 order-1" href="#">
+            <img src="img/escortgames-logo.svg" width="223" height="45" alt="">
+        </a>
+
+        <div
+            class="col-6 col-md-7 col-lg-5 order-2 order-md-3 perfil-gamer d-flex align-items-center justify-content-end">
+            <div class="dropdown jugador-container d-flex align-items-center">
+                <a href="#" class="dropdown-toggle d-flex pl-2" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="foto-perfil" src="img/rosa.jpg" width="52" height="52" alt="">
+                    <span class="nombre-gamer mr-5 d-none d-lg-block">
                         <p class="mb-0"><small>Bienvenido</small></p>
                         <p class="mb-0">Takumi Fujiwara</p>
+                    </span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item font-weight-bold" href="#">
+                        <img src="img/user.svg" alt="" width="16">
+                        Perfil
                     </a>
-                    <div class="dropdown notificaciones-container">
-                        <a href="#" class="notificaciones notificaciones--activas d-none d-lg-block dropdown-toggle"
-                            role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            <i class="fas fa-bell"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item font-weight-bold" href="#">Nuevo mensaje de Valkerdum</a>
-                            <a class="dropdown-item font-weight-bold" href="#">Escolta agendado</a>
-                            <a class="dropdown-item font-italic" href="#">Escolta agendado</a>
-                        </div>
-                    </div>
-                </span>
+                    <a class="dropdown-item font-weight-bold" href="#">
+                        <img src="img/calendar.svg" alt="" width="18">
+                        Asistencias
+                    </a>
+                    <a class="dropdown-item font-weight-bold" href="#">
+                        <img src="img/pagos.svg" alt="" width="18">
+                        Pagos
+                    </a>
+                    <a class="dropdown-item font-weight-bold" href="#">
+                        <img src="img/configuracion.svg" alt="" width="18">
+                        Configuración
+                    </a>
+                    <hr>
+                    <a class="dropdown-item font-weight-bold" href="#">
+                        <img src="img/close-session.svg" alt="" width="17">
+                        Cerrar sesión
+                    </a>
+                </div>
             </div>
-        </nav>
-    </header>
-    <!-- end navegación -->
+            <div class="dropdown notificaciones-container">
+                <a href="#" class="notificaciones notificaciones--activas d-none d-lg-block dropdown-toggle"
+                    role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-bell"></i>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item font-weight-bold" href="#">Nuevo mensaje de Valkerdum</a>
+                    <a class="dropdown-item font-weight-bold" href="#">Escolta agendado</a>
+                    <a class="dropdown-item font-italic" href="#">Escolta agendado</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="navbar-toggler order-3" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+
+        <div class="collapse navbar-collapse order-4 order-lg-2" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bold" href="#">Juegos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Escoltas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Qué hacemos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="">Mi Perfil
+                        <span class="notificaciones notificaciones--activas">
+                            <i class="fas fa-bell"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<!-- end navegación -->
 
     <section class="container-fluid px-md-0">
         <img src="img/que-hacemos-bg.png" alt="" class="header-seccion-img">

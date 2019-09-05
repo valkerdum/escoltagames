@@ -10,14 +10,19 @@
 @import 'modals.scss';
 @import 'layout';
 @import 'datepicker';
-@import 'helpers';
+@import 'helpers'; 
 @import 'accordeon';
 @import 'tabs';
 @import 'chat';
+@import 'tablas';
+@import 'tooltip';
+@import 'alerts';
 
 body {
     background: $gris-principal;
 }
+
+
 
 .escolta-seccion,
 .que-hacemos {
