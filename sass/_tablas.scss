@@ -10,5 +10,20 @@
             border-top: none;
         }
     }
+
+    &.table-borderless {
+        td {
+            border: none;
+        }
+    }
 }
 
+.table-block {
+    tr {
+        td {
+
+            min-height: 48px;
+        }
+    }
+    
+}
