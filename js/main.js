@@ -18,6 +18,10 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).tab('show');
   });
+
+  $("#terminos").click(function () {
+    $("#btn-terminos").toggleClass("disabled");
+  });
 });
 
 

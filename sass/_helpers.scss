@@ -26,7 +26,7 @@
         color: $blanco;
     }
     @media (max-width: 576px) {
-       font-size: 16px;
+       font-size: 18px;
     }
 }
 .bg-negro-transparente {
@@ -41,6 +41,10 @@
 }
 .border-0 {
     border:none;
+}
+
+.px-14 {
+    font-size: 14px;
 }
 
 @media (max-width: 576px) {

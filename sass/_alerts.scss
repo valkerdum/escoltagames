@@ -8,3 +8,13 @@
         font-size: 45px;
     }
 }
+
+.alert-success-personalizado {
+    background: rgba($verde-principal, 0.6);
+    border: solid 4px  $verde-borde;
+    font-size: 23px;
+    color: $morado;
+    font-family: $robotoc-bold;
+    border-radius: 0;
+
+}

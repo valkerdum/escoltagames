@@ -81,8 +81,6 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-
-
         <div class="collapse navbar-collapse order-4 order-lg-2" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
@@ -161,16 +159,16 @@
                         <div class="col-12 col-md-7 col-lg-8 sobre-mi">
                             <ul class="nav nav-tabs mt-4 mt-sm-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#home">Sobre mí</a>
+                                    <a class="nav-link active" href="#home">Sobre mí</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#menu1">Mensajes</a>
+                                    <a class="nav-link " href="#menu1">Mensajes</a>
                                 </li>
                             </ul>
 
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div id="home" class="container tab-pane fade  pt-4 pb-4">
+                                <div id="home" class="container tab-pane active  pt-4 pb-4">
                                     <p>Mi nombre es Keisuke Takahashi, soy un empresario, jugador conocido en League of
                                         Legends, ajedrez y baterista. ¡Me gusta conocer gente nueva, lugares y viajes (y
                                         por supuesto) de fiesta!
@@ -189,7 +187,7 @@
                                         Ingles
                                     </button>
                                 </div>
-                                <div id="menu1" class="container tab-pane active pt-4 pb-2 px-2">
+                                <div id="menu1" class="container tab-pane  fade  pt-4 pb-2 px-2">
                                     <form action="">
                                         <div class="row chat-app">
                                             <div class="col-12 col-sm-4 mis-chats-listado mis-chats ">
@@ -371,6 +369,7 @@
                                 </div>
 
                             </div>
+                            
                         </div>
                         <!-- END Sobre mi -->
 
@@ -466,6 +465,52 @@
                         </div>
 
                         <div class="col-12 col-md-7 col-lg-8 resenas-usuarios mt-3">
+                            <div class="col-12 pb-2 bg-negro-transparente mt-3 mb-3">
+                                <h4 class="titulo-con-fondo titulo-con-fondo--textwhite">Información de pagos
+                                    <a href="javascript:void(0) editarBtn" id="editarMedio" class="text-underline px-14 float-right pt-1">Editar</a>
+                                </h4>
+                                <div class="form-group">
+                                    <label class="text-color-blanco font-weight-bold mb-1" for="inputEmail4">Cuenta de PayPal</label>
+                                    <input type="email" class="form-control editarMedio d-none col-md-6 " id="inputEmail4"
+                                        placeholder="Cuenta de Paypal">
+                                    <p class="text-color-blanco editarLabel">keisuke_takahashi@gmail.com</p>
+                                </div>
+                                <h4 class="titulo-con-fondo titulo-con-fondo--textwhite">Cuenta Bancaria (solo Chile)
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-6 form-group mb-0">
+                                        <label class="text-color-blanco font-weight-bold mb-1" for="inputEmail4">Banco</label>
+                                        <select class="form-control editarMedio d-none mb-2" id="exampleFormControlSelect1">
+                                            <option>Santander</option>
+                                            <option>Banco de Chile</option>
+                                        </select>
+                                        <p class="text-color-blanco editarLabel">Banco de Chile</p>
+                                    </div>
+                                    <div class="col-md-6 form-group mb-0">
+                                        <label class="text-color-blanco font-weight-bold mb-1" for="inputEmail4">Tipo de cuenta</label>
+                                        <select class="form-control editarMedio d-none mb-2" id="exampleFormControlSelect1">
+                                            <option>Corriente</option>
+                                            <option>Vista</option>
+                                        </select>
+                                        <p class="text-color-blanco editarLabel">Cuenta Vista</p>
+                                    </div>
+                                    <div class="col-md-6 form-group mb-0">
+                                        <label class="text-color-blanco font-weight-bold mb-1" for="inputEmail4">Número de cuenta</label>
+                                        <input type="text" class="form-control editarMedio d-none mb-2" id="inputEmail4"
+                                            placeholder="Número de cuenta">
+                                        <p class="text-color-blanco editarLabel">000123456789</p>
+                                    </div>
+                                    <div class="col-md-6 form-group mb-0">
+                                        <label class="text-color-blanco font-weight-bold mb-1" for="inputEmail4">RUT</label>
+                                        <input type="text" class="form-control editarMedio d-none mb-2" id="inputEmail4" placeholder="17.025.290-3">
+                                        <p class="text-color-blanco editarLabel">12.345.678-9</p>
+                                    </div>
+                                    <div class="col-12 text-right pr-3 mt-3">
+                                        <button type="button"
+                                            class="editarMedio d-none btn btn-primary btn-morado btn-morado--wide">Guardar</button>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-12">
                                 <h4 class="header-seccion">Reseñas de usuarios</h4>
                                 <div class="row user-review">
@@ -683,6 +728,18 @@
     <script src="js/tempusdominus/tempusdominus-bootstrap-4.min.js"></script>
     <script src="js/scroll/fakescroll.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+                $("#editarMedio").click(function () {
+                    $(".editarMedio").toggleClass("d-none");
+                    $(".editarLabel").toggleClass("d-none");
+                });
+                $("#editarMedio").click(function () {
+                    $(this).text($(this).text() == 'Editar' ? 'Cancelar' : 'Editar');
+                });
+            });
+    </script>
 </body>
 
 </html>

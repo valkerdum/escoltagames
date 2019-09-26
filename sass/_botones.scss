@@ -9,6 +9,10 @@
     &--wide {
         padding: 0.375rem 2rem;
     }
+    &:disabled,
+    &.disabled {
+        background: $morado; 
+    }
 }
 
 .btn {
