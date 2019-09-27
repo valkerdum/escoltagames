@@ -79,3 +79,31 @@
         
     }
 }
+
+.card-perfil {
+    .card {
+        max-width: calc(25% - 30px);
+        flex: 1 0 calc(25% - 30px);
+        
+        .rounded-circle {
+            margin-top: 20px;
+            width: calc(100% - 30px);
+            height: calc(100% - 30px);
+            max-width: 158px;
+            max-height: 158px;
+
+        }
+        .btn-lenguaje {
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+            .card-deck.card-perfil  .card {
+              width: 100%;
+              max-width: 100%;
+              flex: 1 0 100%;
+            }
+        }

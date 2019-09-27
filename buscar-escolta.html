@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Escort Games</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="js/owl-slider/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="js/owl-slider/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/starrating/star-rating-svg.css">
+    <link rel="stylesheet" href="css/tempusdominus/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- navegación -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand col-2 col-sm-3 px-0 order-1" href="#">
+            <img src="img/escortgames-logo.svg" width="223" height="45" alt="">
+        </a>
+
+        <div class="col-6 col-md-7 col-lg-5 order-2 order-md-3 perfil-gamer d-flex align-items-center justify-content-end">
+            <div class="dropdown jugador-container d-flex align-items-center">
+                <a href="#" class="dropdown-toggle d-flex pl-2" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img class="foto-perfil" src="img/rosa.jpg" width="52" height="52" alt="">
+                    <span class="nombre-gamer mr-5 d-none d-lg-block">
+                        <p class="mb-0"><small>Bienvenido</small></p>
+                        <p class="mb-0">Takumi Fujiwara</p>
+                    </span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item font-weight-bold" href="#">
+                        <img src="img/user.svg" alt="" width="16">
+                        Perfil
+                    </a>
+                    <a class="dropdown-item font-weight-bold" href="#">
+                        <img src="img/calendar.svg" alt="" width="18">
+                        Asistencias
+                    </a>
+                    <a class="dropdown-item font-weight-bold" href="#">
+                        <img src="img/pagos.svg" alt="" width="18">
+                        Pagos
+                    </a>
+                    <a class="dropdown-item font-weight-bold" href="#">
+                        <img src="img/configuracion.svg" alt="" width="18">
+                        Configuración
+                    </a>
+                    <hr>
+                    <a class="dropdown-item font-weight-bold" href="#">
+                        <img src="img/close-session.svg" alt="" width="17">
+                        Cerrar sesión
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown notificaciones-container">
+                <a href="#" class="notificaciones notificaciones--activas d-none d-lg-block dropdown-toggle" role="button"
+                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bell"></i>
+                </a>
+        
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item font-weight-bold" href="#">Nuevo mensaje de Valkerdum</a>
+                    <a class="dropdown-item font-weight-bold" href="#">Escolta agendado</a>
+                    <a class="dropdown-item font-italic" href="#">Escolta agendado</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="navbar-toggler order-3" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+
+        <div class="collapse navbar-collapse order-4 order-lg-2" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bold" href="#">Juegos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Escoltas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Qué hacemos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="">Mi Perfil
+                        <span class="notificaciones notificaciones--activas">
+                            <i class="fas fa-bell"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+</header>
+<!-- end navegación -->
+
+<section class="container-fluid px-md-0">
+    <img src="img/buscar-ecolta-bg.png" alt="" class="header-seccion-img">
+    <div class="container position-relative">
+        <div class="row">
+            <h2 class="text-color-gris-principal pt-5 font-weight-bold">Buscar Escoltas</h2>
+            <div class="col-12">
+                <div class="primer-container-seccion ">
+                    <div class="row ml-0 mr-0">
+                        <div class="col-12 pb-2 bg-negro-transparente mt-3">
+                            <h4 class="titulo-con-fondo titulo-con-fondo--textwhite">Filtros</h4>
+                            <form action="">
+                                <div class="form-row mt-3">
+                                    <div class="form-group col-md-4 pr-3 pl-lg-3">
+                                        <label class="text-color-blanco" for="inputEmail4">Juego</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>WOW</option>
+                                            <option>Dota</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4 pr-3 pl-lg-3">
+                                        <label class="text-color-blanco" for="inputPassword4">Plataforma</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>PS4</option>
+                                            <option>PSP</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4 pr-3  pt-4  align-items-center row  px-sm-4 px-3">
+                                        <div class="form-check form-check-inline mt-2 ml-sm-2">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label text-white pt-1" for="inlineRadio1">Español</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mt-2 ml-sm-2">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
+                                            <label class="form-check-label text-white pt-1" for="inlineRadio2">English</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4 pr-3 pl-lg-3">
+                                        <label class="text-color-blanco" for="inputEmail4">Precio Mínimo (USD x hora)</label>
+                                        <input type="text" class="form-control" id="inputtext4" placeholder="Ingrese">
+                                    </div>
+                                    <div class="form-group col-md-4 pr-3 pl-lg-3">
+                                        <label class="text-color-blanco" for="">Precio Máximo (USD x hora)</label>
+                                        <input type="text" class="form-control" id="" placeholder="Ingrese">
+                                    </div>
+                                    <div class="form-group col-md-4 pr-3 pl-lg-3">
+                                        <label class="text-color-blanco" for="">Alias de escolta</label>
+                                        <input type="text" class="form-control" id="" placeholder="Ingrese">
+                                    </div>
+                                    <div class="col-md-12 text-right pr-3 mt-3 d-sm-flex justify-content-end">
+
+                                    <button type="button" id="btn-terminos"
+                                        class="btn btn-primary btn-morado btn-morado--wide mt-3 mt-sm-0 d-none d-sm-inline-block">Buscar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-3 offset-md-9">
+                            <form>
+                                <div class="form-group">
+                                    <label for="" class="text-color-blanco">Ordenar por</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <div class="row mt-4 justify-content-center">
+                        <div class="col-md-12">
+                            <div class="card-deck card-perfil">
+                                <div class="card">
+                                    <div class="text-center">
+                                        <img src="img/rosa.jpg" width="176" height="176" alt="" class="rounded-circle">
+                                        <h4 class="text-white mt-3 font-weight-bold">Keisuke Takahashi</h4>
+                                        <div class="my-rating mt-2"></div>
+                                        <p class="text-white mt-2">
+                                            <strong>4.0</strong> (10 reseñas)
+                                        </p>
+                                        <button type="button" class="btn btn-lenguaje">
+                                            Español
+                                        </button>
+                                        <button type="button" class="btn btn-lenguaje">
+                                           Ingles
+                                        </button>
+                                        <p class="text-white mt-3 font-weight-bold">USD $1,00 (por hora)</p>
+                                        <button type="button" class="btn btn-outline-light btn-wider mb-4">Ver perfil</button>
+
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="text-center">
+                                        <img src="img/rosa.jpg" width="176" height="176" alt="" class="rounded-circle">
+                                        <h4 class="text-white mt-3 font-weight-bold">Keisuke Takahashi</h4>
+                                        <div class="my-rating mt-2"></div>
+                                        <p class="text-white mt-2">
+                                            <strong>4.0</strong> (10 reseñas)
+                                        </p>
+                                        <button type="button" class="btn btn-lenguaje">
+                                            Español
+                                        </button>
+                                        <button type="button" class="btn btn-lenguaje">
+                                            Ingles
+                                        </button>
+                                        <p class="text-white mt-3 font-weight-bold">USD $1,00 (por hora)</p>
+                                        <button type="button" class="btn btn-outline-light btn-wider mb-4">Ver perfil</button>
+                                
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="text-center">
+                                        <img src="img/rosa.jpg" width="176" height="176" alt="" class="rounded-circle">
+                                        <h4 class="text-white mt-3 font-weight-bold">Keisuke Takahashi</h4>
+                                        <div class="my-rating mt-2"></div>
+                                        <p class="text-white mt-2">
+                                            <strong>4.0</strong> (10 reseñas)
+                                        </p>
+                                        <button type="button" class="btn btn-lenguaje">
+                                            Español
+                                        </button>
+                                        <button type="button" class="btn btn-lenguaje">
+                                            Ingles
+                                        </button>
+                                        <p class="text-white mt-3 font-weight-bold">USD $1,00 (por hora)</p>
+                                        <button type="button" class="btn btn-outline-light btn-wider mb-4">Ver perfil</button>
+                                
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="text-center">
+                                        <img src="img/rosa.jpg" width="176" height="176" alt="" class="rounded-circle">
+                                        <h4 class="text-white mt-3 font-weight-bold">Keisuke Takahashi</h4>
+                                        <div class="my-rating mt-2"></div>
+                                        <p class="text-white mt-2">
+                                            <strong>4.0</strong> (10 reseñas)
+                                        </p>
+                                        <button type="button" class="btn btn-lenguaje">
+                                            Español
+                                        </button>
+                                        <button type="button" class="btn btn-lenguaje">
+                                            Ingles
+                                        </button>
+                                        <p class="text-white mt-3 font-weight-bold">USD $1,00 (por hora)</p>
+                                        <button type="button" class="btn btn-outline-light btn-wider mb-4">Ver perfil</button>
+                                
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-end">
+                        <div class="col-12">
+                            <hr class="border-white">
+                        </div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination pagination-sm px-3">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="mt-5 footer footer--suscribete row mx-0">
+    <!-- Suscribete -->
+    <div class="col-12 align-self-start">
+        <div class="container">
+            <div class="footer--suscribete--contenido row align-items-center justify-content-center ">
+                <div class="col-12 col-md-5 text-center text-white mt-20-xs">
+                    <h4><strong>¡Suscríbete!</strong></h4>
+                    <h5>No te pierdas nuestras novedades, ingresa tu  correo y suscríbete a nuestro Newsletter mensual!</h5>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-5 col-xl-4">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-control is-invalid" id="inputPassword2" placeholder="usuario@mail.com">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-white">Suscribir</button>
+                        <div class="invalid-feedback d-block text-white">
+                            Ingresa email válido
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+    </div><!-- END Suscribete -->
+    <div class="col-12 align-self-end px-0">
+        <div class="container-fluid  bajada-footer">
+            <div class="container">
+                <div class="row align-items-center footer-data">
+                    <div class="col-4 col-sm-1 order-1">
+                        <img src="img/escort-games-minilogo.svg" width="67" alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 order-3 order-sm-2 footer-legales">
+                        <p class="mb-0"><small>Copyright © 2019 <strong>Escort Gamers.</strong> Todos los derechos reservados.</small></p>
+                    </div>
+                    <div class="col-8 col-sm-5 order-2 order-sm-3 text-right">
+                        <a href="#">
+                            <img src="img/social-twich.svg" width="29" alt="" class="d-inline mr-2">
+                        </a>
+                        <a href="#">
+                            <img src="img/social-youtube.svg" width="31" alt="" class="d-inline mr-2">
+                        </a>
+                        <a href="#">
+                            <img src="img/social-facebook.svg" width="31" alt="" class="d-inline">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="js/owl-slider/owl.carousel.min.js"></script>
+<script src="js/starrating/jquery.star-rating-svg.min.js"></script>
+<script src="js/moment/moment-with-locales.min.js"></script>
+<script src="js/tempusdominus/tempusdominus-bootstrap-4.min.js"></script>
+<script src="js/scroll/fakescroll.js"></script>
+<script src="js/main.js"></script>
+    
+</body>
+</html>

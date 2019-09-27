@@ -1,6 +1,12 @@
 .font-weight-bold {
     font-family: $robotoc-bold;
 }
+
+.btn-wider {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .font-italic {
     font-family: $robotoc-italic;
 }
@@ -15,6 +21,9 @@
 }
 .text-color-blanco {
     color:$blanco;
+}
+.text-color-gris-principal {
+    color: $gris-principal;
 }
 .titulo-con-fondo {
     background: rgba($negro, 0.4);

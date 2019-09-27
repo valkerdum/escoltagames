@@ -27,3 +27,23 @@
     }
     
 }
+
+.pagination {
+    .page-item {
+        width: 29px;
+        height: 29px;
+        text-align: center;
+        &.active {
+            .page-link {
+                color: $negro;
+                 background: $blanco;
+                border-radius: 50%;
+            }
+        }
+    }
+    .page-link {
+        background: none;
+        border: none;
+        color: $blanco;
+    }
+}

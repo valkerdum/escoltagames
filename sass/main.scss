@@ -129,25 +129,6 @@ body {
             }
             margin-top: 5px;
         }
-        .pagination {
-            .page-item {
-                width: 29px;
-                height: 29px;
-                text-align: center;
-                &.active {
-                    background: $blanco;
-                     border-radius: 50%;
-                    .page-link {
-                        color: $negro;
-                    }
-                }
-            }
-            .page-link {
-                background: none;
-                border: none;
-                color: $blanco;
-            }
-        }
     }
 }
 

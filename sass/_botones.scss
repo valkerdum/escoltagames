@@ -35,33 +35,33 @@
 
 
 .hovereffect {
-width: 100%;
-height: 100px;
-float: left;
-overflow: hidden;
-position: relative;
-text-align: center;
-cursor: default;
-background: $verde-principal;
-    .overlay {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        overflow: hidden;
-        top: 0;
-        left: 0;
-        padding: 50px 20px;
-        text-align: left;
-        h5 {
-            margin-top: -10px;
-            margin-bottom: 0;
-            color: $blanco;
-            font-family: $robotoc-bold;
-            img {
-                float: right
+    width: 100%;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: $verde-principal;
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            padding: 50px 20px;
+            text-align: left;
+            h5 {
+                margin-top: -10px;
+                margin-bottom: 0;
+                color: $blanco;
+                font-family: $robotoc-bold;
+                img {
+                    float: right
+                }
             }
         }
-    }
 }
 
 .hovereffect  .img-responsive {
@@ -69,11 +69,8 @@ background: $verde-principal;
   position: relative;
   max-width: none;
   width: calc(100% + 20px);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-10px,0,0);
   transform: translate3d(-10px,0,0);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
