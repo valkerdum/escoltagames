@@ -22,6 +22,21 @@ $(document).ready(function () {
   $("#terminos").click(function () {
     $("#btn-terminos").toggleClass("disabled");
   });
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+
+  $('.seccion-ver-mas .seccion-ver-mas-boton').on("click", function () {
+    $(this).parent('.seccion-ver-mas').addClass("seccion-ver-mas-expandido")
+  });
+  $("#editarMedio").click(function () {
+    $(".editarMedio").toggleClass("d-none");
+    $(".editarLabel").toggleClass("d-none");
+  });
+  $("#editarMedio").click(function () {
+    $(this).text($(this).text() == 'Editar' ? 'Cancelar' : 'Editar');
+  });
 });
 
 
@@ -52,11 +67,11 @@ $(".my-rating-historial").starRating({
 $(".my-rating-carry").starRating({
   initialRating: 0,
   totalStars: 5,
-  starSize: 40,
+  starSize: 35,
   readOnly: false,
   emptyColor: '#3ae6c6',
   activeColor: '#2A095F',
-  strokeWidth: 40,
+  strokeWidth: 35,
   strokeColor: '#2A095F',
   useGradient: false,
   hoverColor: '#2A095F',
@@ -97,4 +112,5 @@ document.querySelector('.mis-chats-listado').fakeScroll(
 
 for (let elm of document.querySelectorAll('.fakeScroll__content'))
   elm.setAttribute('contenteditable', true)
+  
 
